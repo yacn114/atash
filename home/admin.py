@@ -11,5 +11,4 @@ class SiteInformationAdmin(admin.ModelAdmin):
 class SiteInformationAdmin(admin.ModelAdmin):
     list_display = (['title'])
 def joincategory(Posts):
-    
-    
+   pass 
