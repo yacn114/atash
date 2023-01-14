@@ -10,3 +10,6 @@ class SiteInformationAdmin(admin.ModelAdmin):
 @admin.register(Categories)
 class SiteInformationAdmin(admin.ModelAdmin):
     list_display = (['title'])
+def joincategory(Posts):
+    
+    
