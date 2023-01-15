@@ -28,6 +28,7 @@ class Posts(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     Categories = models.ManyToManyField(Categories)
     status = models.BooleanField(default=False)
+    hot = models.BooleanField(default=False)
     class Meta:
         verbose_name = "پست"
         verbose_name_plural = "پست ها"

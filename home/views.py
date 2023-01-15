@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Posts
 # Create your views here.
 def homePage(request):
-    return render(request, 'home.html')
+    obj = Posts.objects.filter(status=True)
+    return render(request, 'home.html',{"obj":obj})

@@ -9,3 +9,5 @@ def information(inp):
         return SiteInformation.objects.all()[0].siteNamePersian
     if inp == "nameE":
         return SiteInformation.objects.all()[0].siteNameEnglish
+    if inp == "logo":
+        return SiteInformation.objects.all()[0].logo

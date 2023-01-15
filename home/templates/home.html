@@ -96,6 +96,7 @@
 
 
 
+
         <div class="blackthemeMiddle blackthemeCont">
             <div class="blackthemeMiddleSection home">
                 <BlogLinksBlock>
@@ -103,45 +104,47 @@
                         <div class="homeLinkBox">
                             <a href="javascript:void(0);" class="linkBox userProfile">
                                 <div class="linkImg">
+                                    
                                 </div>
-                                <div class="linkText"><-BlogTitle-></div>
+                                <div class="linkText">{% information "name" %}</div>
                             </a>
+                            {% for ob in obj %}
+                            
+                            {% if ob.hot == True %}
+                            
                             <BlogLinks>
-                                <a href="<-LinkUrl->" target="_blank" class="linkBox">
+                                <a href="{{ob.title}}" target="_blank" class="linkBox">
                                     <div class="linkImg"></div>
-                                    <div class="linkText"><-LinkTitle-></div>
+                                    <div class="linkText">{{ob.title}}</div>
                                 </a>
                             </BlogLinks>
+                            {% endif %}
+                            {% endfor %}
                         </div>
                     </div>
                 </BlogLinksBlock>
-
+                {% for ob in obj %}
                 <BLOGFA>
                     <div class="blackthemePostBox">
                         <div class="blackthemeHeadPost blackthemeCont">
                             <div class="imgPartHeadPost">
                                 <span>
-                                    <-PostAuthor->
+                                    {{ob.author}}
                                 </span>
                             </div>
                             <h2><a href="<-PostLink->">
-                                    <-PostTitle->
+                                    {{ob.title}}
                                 </a></h2>
                         </div>
                         <div class="postReturnImage">
                         </div>
                         <div class="sharedContent blackthemeCont">
                             <div class="postSharedInfo">
-                                <div class="sharedIconBox">
-                                    <i class="fa fa-calendar"></i>
-                                    <span>
-                                        <-PostDate->
-                                    </span>
-                                </div>
+                                
                                 <div class="sharedIconBox">
                                     <i class="fa fa-clock-o"></i>
                                     <span>
-                                        <-PostTime->
+                                        {{ob.published}}
                                     </span>
                                 </div>
                                 <BlogComment>
@@ -150,24 +153,27 @@
                             </div>
                         </div>
                         <div class="mainContent blackthemeCont">
-                            <-PostContent->
+                            {{ob.caption}}
                                 <BlogExtendedPost>
                                     <div class="sharedTag">
                                         <i class="fa fa-plus"></i><a href="<-PostLink->">ادامه نوشته</a>
                                     </div>
                                 </BlogExtendedPost>
                                 <BlogPostTagsBlock>
+                                    {% for category in ob.Categories.all %}
                                     <div class="sharedTag">
                                         <i class="fa fa-thumb-tack"></i>
-                                        <BlogPostTags separator=", "><a href="<-TagLink->">
-                                                <-TagName->
+                                        <BlogPostTags separator=", "><a href="/c/#{{category}}">
+                                            
+                                                #{{category}}
                                             </a></BlogPostTags>
-                                    </div>
+                                        </div>
+                                        {% endfor %}
                                 </BlogPostTagsBlock>
                         </div>
                     </div>
                 </BLOGFA>
-
+                {% endfor %}
                 <BlogNextAndPreviousBlock>
                     <div class="blackthemePagenation blackthemeCont">
                         <BlogPreviousPageBlock>
