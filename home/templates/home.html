@@ -2,395 +2,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% information "name" %} | صفحه اصلی</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet"
-        href="https://cdn.rawgit.com/rastikerdar/sahel-font/v3.4.0/dist/font-face.css">
-<style>
-@keyframes timeLine{to{width:100%}}body{margin:0;line-height:1.8;overflow-x:hidden;font-family:'sahel',sans-serif,tahoma,arial;background-color:#fafafa;color:#262626;font-size:16px;scroll-behavior:smooth;overflow-y:scroll}.blackthemeBottom .blackthemeBottomIcon svg,.blackthemeTop h1 a,.blackthemeTop h2 a,details,main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;text-decoration:none;color:inherit}abbr[title]{border-bottom:none;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none;max-width:100%}button,optgroup,select{font-family:inherit}button,input,optgroup,select,textarea{font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}*{box-sizing:border-box}h1,h2,h3,h4,h5,h6,input,p,span,textarea{font-family:'sahel',sans-serif,tahoma,arial}.blackthemeCont{padding-right:20px;padding-left:20px;direction:rtl}.blackthemeWrap{max-width:768px;margin:auto;position:relative}.blackthemeBottom,.blackthemeTop{position:fixed;left:0;margin:auto;width:100%;background:#fff;height:50px;display:flex;flex-direction:row;align-items:center;z-index:9}.blackthemeTop{top:0;border-bottom:1px solid #dbdbdb}.blackthemeTop h1{font-size:20px;padding:0;margin:0;font-weight:600}.blackthemeBlogText h2,.blackthemeTop h2{font-size:18px;padding:0;margin:0;font-weight:600}.blackthemeTop .blackthemeTopSection{display:flex;flex-direction:row-reverse;align-items:center;justify-content:space-between;width:100%}.blackthemeTop .centerForce{justify-content:center}.blackthemeTop .blackthemeTopWrap{width:100%}.blackthemeTop .blackthemeTopSection .blackthemeTopIcon svg{display:block;cursor:pointer}.blackthemeBottom{bottom:0;border-top:1px solid #dbdbdb}.blackthemeBottom .blackthemeBottomIcon,.blackthemeBottom .blackthemeTopSection .blackthemeTopIcon,.homeLinkBoxWrap .homeLinkBox .linkBox .linkImg span{width:100%;text-align:center;display:flex;flex-direction:row;align-items:center;justify-content:center}.blackthemeBottom .blackthemeBottomIcon{cursor:pointer}.blackthemeBottom .blackthemeBottomIcon img{height:30px;width:30px;border-radius:50%;overflow:hidden}.blackthemeMiddle{margin-top:70px;margin-bottom:70px}.homeLinkBoxWrap{padding:10px 0;overflow:hidden;height:105px}.homeLinkBoxWrap .homeLinkBox{overflow-y:hidden;overflow-x:auto;display:flex;flex-direction:row-reverse;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;-ms-overflow-style:-ms-autohiding-scrollbar;-webkit-overflow-scrolling:touch}.homeLinkBoxWrap .homeLinkBox .linkBox{min-width:64px;width:64px;text-align:center;display:block;margin:0 10px 20px;user-select:none}.homeLinkBoxWrap .homeLinkBox .linkBox .linkImg{width:65px;height:65px;border-radius:50%;margin:auto;overflow:hidden;padding:4px;position:relative;z-index:2;background:#dbdbdb}.homeLinkBoxWrap .homeLinkBox .storyHighlight .linkImg{background-image:linear-gradient(to bottom left,#bf00ff,#ed4956,#ff8000)}.homeLinkBoxWrap .homeLinkBox .storyHighlight .linkText{color:#262626!important}.homeLinkBoxWrap .homeLinkBox .linkBox .linkImg::before{content:'';position:absolute;top:2px;bottom:2px;left:2px;right:2px;z-index:-1;border-radius:50%;background:#fff}.homeLinkBoxWrap .homeLinkBox .linkBox .linkImg span{height:100%;font-weight:600;background:#ececec;border-radius:50%}.blackthemeProfilePhoto img,.homeLinkBoxWrap .homeLinkBox .linkBox .linkImg img{height:100%;width:100%;display:block;border-radius:50%}.homeLinkBoxWrap .homeLinkBox .linkBox .linkText{display:block;font-size:12px;line-height:14px;max-width:64px;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap;direction:rtl;margin-top:5px;color:#8e8e8e;font-weight:500}.blackthemePostBox,.homeLinkBoxWrap{background:#fff;border:1px solid #dbdbdb;border-radius:3px;margin-bottom:20px}.blackthemeProfileWrap{display:flex;flex-direction:row-reverse;align-items:flex-start}.blackthemeProfilePhoto{max-width:150px;width:100%}.blackthemeProfilePhoto img{height:150px;width:150px}.blackthemeBlogText{width:100%;padding-left:20px}.blackthemeBlogText h1{font-size:24px;margin:0;padding:0}.blackthemeBlogText h2{font-weight:500;margin:5px 0 0}.blackThemeInfoText,.blackthemeBlogInfoFriendAndPost{margin-top:20px}.blackthemeBlogInfoFriendAndPost a{margin-left:40px;font-weight:100}.blackthemeBlogInfoFriendAndPost a b{font-weight:600}.blackthemeMakePostTitle{border-top:1px solid #dbdbdb;display:flex;flex-direction:row;flex-wrap:wrap;direction:rtl;padding-top:20px}.blackthemeMakePostTitleWrap{width:25%;padding:10px}.blackthemeMakePostTitleWrap a{display:flex;align-items:center;justify-content:center;height:150px;background-color:#f1f1f1;border-radius:3px;font-size:20px;transition:.3s all ease}.blackthemeMakePostTitleWrap a:hover{background-color:#dbdbdb}.blackthemeMiddleSection{display:none}.blackthemeMiddleSection.home,.blackthemeTopWrap.home{display:block}.bottomButtonSet{opacity:.3}.blackthemeTopWrap,.content img{display:none}.storyOverly{position:fixed;background-color:rgba(38,38,38,.95);height:100%;z-index:10}.storyBox,.storyOverly,.timer{top:0;left:0;width:100%}.storyBox{max-width:768px;position:fixed;right:0;bottom:0;margin:20px auto;z-index:11}.timer{height:10px;display:flex;flex-direction:row;align-items:center;position:absolute;z-index:1;padding:0 3px}.timer .time{width:100%;margin-right:3px;background:rgba(255,255,255,.5);height:3px;position:relative}.timer .showTimer::before{content:'';position:absolute;left:0;top:0;height:100%;width:0;animation:timeLine 5s linear;background-color:#fff;animation-play-state:running}.timePause::before{animation:none!important}.timer .time:last-of-type{margin-right:0}.content{background:#999;position:relative;height:100%}.content .img{background-size:cover;height:100%;background-position:center;display:none}.content .img:first-of-type{display:block}.content .display{display:block}.storyBox:hover .sliderBtn{opacity:1}.sliderBtn{position:absolute;top:0;height:100%;width:100px;transition:.3s all ease;opacity:0;color:#fff;display:flex;align-items:center;justify-content:center;flex-direction:row;font-size:50px}.sliderBtn:hover{text-shadow:0 0 3px #fff,0 0 5px #fff,0 0 7px #fff}.btnLeft{left:0;background:linear-gradient(to left,rgba(255,255,255,0),rgba(255,255,255,.2))}.btnRight{right:0;background:linear-gradient(to left,rgba(255,255,255,.2),rgba(255,255,255,0))}.closeStory,.porfileUserStory{display:flex;flex-direction:row;position:absolute;align-items:center;top:20px;z-index:1;color:#fff}.porfileUserStory{left:20px}.porfileUserStory h2{font-weight:400;padding:0;font-size:16px;margin:0 0 0 10px}.blackthemeHeadPost .imgPartHeadPost img,.porfileUserStory img{height:50px;width:50px;border-radius:50%;display:block}.closeStory{right:20px;font-size:50px}.storySection{display:none}.blackthemeHeadPost{display:flex;flex-direction:row-reverse;align-items:center;justify-content:space-between;padding-top:10px;padding-bottom:10px;border-bottom:.5px solid #efefef}.blackthemeHeadPost .imgPartHeadPost{font-size:14px;font-weight:500}.blackthemeHeadPost .imgPartHeadPost img{margin-right:10px}.blackthemeHeadPost h2{padding:0;margin:0;font-size:18px}.sharedContent{padding-top:20px;padding-bottom:10px}.blackthemeHeadPost .imgPartHeadPost,.postSharedInfo{display:flex;flex-direction:row-reverse;align-items:center}.postSharedInfo{flex-wrap:wrap}.sharedIconBox{display:flex;flex-direction:column;align-items:center;margin-right:30px}.sharedIconBox:last-of-type{margin-right:0}.sharedIconBox i{margin-bottom:10px;font-size:22px}.sharedIconBox span{font-weight:100;font-size:14px}.postReturnImage img{display:block;width:100%;height:auto}.mainContent{direction:rtl;padding-bottom:10px;padding-top:10px}.mainContent p{margin:0 0 2px}.mainContent p img{height:auto}.sharedTag{margin-top:10px}.sharedTag i{margin-left:20px}.sharedTag a{font-weight:100}.blackthemeCopyRight,.blackthemePagenation{padding-top:10px;padding-bottom:10px;background-color:#fff;border:1px solid #dbdbdb;border-radius:3px;margin-bottom:20px}.blackthemeCopyRight{text-align:center}.blackthemeCopyRight h2{display:inline-block;margin:0;padding:0;font-size:unset}.blackthemeCopyRight a{font-weight:600}.blackthemeCopyRight h2 p{display:inline-block;margin:0;padding:0;font-weight:400}.clear{clear:both}.blackthemePagenation .previouslink{float:right}.blackthemePagenation .nextlink{float:left}.blackthemeTop .search form,.directLeftPart,.directLeftPart .getImage{display:flex;flex-direction:row-reverse;align-items:center}.directLeftPart img{width:30px;height:30px;border-radius:50%;margin-right:15px;display:block}.directLeftPart svg{transform:rotate(-90deg);margin-right:15px;cursor:pointer}.directLeftPart span{font-size:14px;font-weight:600}.direct .directBoxWrap{padding:0;margin:0;direction:rtl;display:flex;flex-direction:column;align-items:flex-start}.direct .directBoxWrap li{padding:15px;margin:0 0 20px;list-style:none;border-radius:22px;border:1px solid #efefef}.direct .directBoxWrap li p{margin:0 0 2px;padding:0}.direct .directBoxWrap li p img{border-radius:5px}.direct .directBoxWrap li p a{font-weight:700}.blackthemeTop .search form{width:100%;max-width:768px;border:1px solid #efefef;border-radius:3px;flex-direction:row;margin:auto;position:relative}.blackthemeTop .search form input{min-width:100%;background:0 0;border:0;outline:0;height:30px;line-height:30px;padding:0 20px;font-size:13px}.blackthemeTop .search form button{position:absolute;top:5px;left:10px;outline:0;border:0;background-color:none;background:0 0;cursor:pointer}.blackthemeMiddle .search .searchUl,.profileUi{display:flex;flex-direction:row;font-size:14px;flex-wrap:wrap}.blackthemeMiddle .search .searchCode,.blackthemeMiddle .search .searchUl{border-radius:3px;border:1px solid #dbdbdb;background:#fff;position:relative;padding:20px;font-weight:100;margin:0 0 50px}.blackthemeMiddle .search .searchCode{margin:0;font-size:14px}.blackthemeMiddle .search .searchUl li,.profileUi li{padding:0;list-style:none;margin:7.5px}.blackthemeMiddle .search .searchUl li a{padding:3px 10px;border-radius:3px;background:#f1f1f1;display:block}.blackthemeMiddle .search .searchUl li a:hover{background:#e9e9e9}.blackthemeMiddle .search .searchCode h6,.blackthemeMiddle .search .searchUl h6{margin:0;position:absolute;height:40px;top:-40px;right:20px;font-size:14px;line-height:40px;border-bottom:1px solid #8e8e8e;padding:0 20px}.blackthemeMiddle .search{padding-top:40px}.profileUi{justify-content:space-between;font-weight:600;padding:10px 20px 0;margin:40px 0 -1px}.profileUi li{margin:0;border-bottom:1px solid #8e8e8e}.profileUi li a{padding:5px 15px;display:block}.activityUl{padding:0;margin:0;direction:rtl}.activityUl li{padding:10px;margin:0 0 20px;background:#fff;border-radius:3px;border:1px solid #dbdbdb;list-style:none;display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;font-weight:100}.activityUl li img{display:block;height:50px;width:50px;border-radius:50%;margin-left:20px}.activityUl li a{display:block;font-weight:600;margin-left:5px}.activityUl li span i{margin:0 5px}.blackthemeMiddle.blackthemeCont{padding-left:0;padding-right:0}@media screen and (max-width:768px){.activityUl li,body{font-size:14px}.storyBox{margin:auto}.blackthemeMiddle.blackthemeCont{padding-left:20px;padding-right:20px}.direct .directBoxWrap li{padding:10px;font-size:14px}.blackthemeMiddle .search .searchUl{padding:10px}.blackthemeMakePostTitleWrap{width:33.333333%}}@media screen and (max-width:576px){.blackthemeCont,.blackthemeMiddle.blackthemeCont{padding-left:10px;padding-right:10px}.blackthemeHeadPost .imgPartHeadPost span,.hideForcer{display:none}.profileUi{justify-content:flex-end}.blackthemeMakePostTitleWrap{width:50%}.blackthemeProfileWrap{flex-direction:column}.blackthemeProfilePhoto{margin-bottom:15px}.blackthemeHeadPost{flex-wrap:wrap}}@media screen and (max-width:350px){.blackthemeMakePostTitleWrap{width:100%;padding:10px 0}.blackthemeHeadPost .imgPartHeadPost img{display:none}}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <title>صفحه اصلی | {% information "name" %}</title>
 </head>
 <body>
-
-    <div class="blackthemeWrap">
-        <div class="blackthemeTop blackthemeCont">
-            <div class="blackthemeTopWrap home">
-                <div class="blackthemeTopSection">
-                    <div class="blackthemeTopIcon">
-                        
-                    </div>
-                    <div class="blackthemeTopIcon">
-                        <h1><a href="{% url 'home:homePage' %}">{% information "nameE" %}</a></h1>
-                    </div>
-                    <div class="blackthemeTopIcon">
-                        
-                    </div>
-                </div>
-            </div>
-         
-            <div class="blackthemeTopWrap search">
-                <div class="blackthemeTopSection">
-                    <form target="_new" method="get" action="http://www.google.com/search">
-                        <input name="q" placeholder="جستجو کنید ..." dir="rtl">
-                        <input value="<-BlogUrl->" type="radio" name="sitesearch" style="display: none" checked="">
-                        <button class="fa fa-search" type="submit" name="btnG"></button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="blackthemeTopWrap activity">
-                <div class="blackthemeTopSection centerForce">
-                    <h2>آخرین فعالیت‌های <-BlogTitle->
-                    </h2>
-                </div>
-            </div>
-
-            <div class="blackthemeTopWrap profile">
-                <div class="blackthemeTopSection centerForce">
-                    <h2>درباره <-BlogTitle->
-                    </h2>
-                </div>
-            </div>
-            <!-- end top -->
-        </div>
-
-        <!-- story part -->
-        <div class="storySection">
-            <div class="storyOverly"></div>
-            <div class="storyBox">
-                <div class="timer"></div>
-                <div class="porfileUserStory">
-                    <h2><-BlogTitle-></h2>
-                </div>
-                <div class="closeStory">
-                    <svg class="closePartStory" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40"
-                        height="40" viewBox="0 0 172 172" style=" fill:#000000;">
-                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                            style="mix-blend-mode: normal">
-                            <path d="M0,172v-172h172v172z" fill="none"></path>
-                            <g fill="#ffffff">
-                                <path
-                                    d="M26.5525,21.6075l-4.945,4.945l59.4475,59.4475l-59.4475,59.4475l4.945,4.945l59.4475,-59.4475l59.4475,59.4475l4.945,-4.945l-59.4475,-59.4475l59.4475,-59.4475l-4.945,-4.945l-59.4475,59.4475z">
-                                </path>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div class="content">
-                    <!-- محل گذاشتن تصاویر استوری -->
-                    <!-- create img tag -->
-                    <img src="http://s10.picofile.com/file/8394443968/pic_6.jpg" alt="">
-                    <img src="http://s11.picofile.com/file/8394442576/pic_2.jpg" alt="">
-                    <img src="http://s6.picofile.com/file/8391849618/girl.jpg" alt="">
-                    <img src="http://s6.picofile.com/file/8391849542/boy.jpg" alt="">
-                </div>
-                <div class="btnLeft sliderBtn"><i class="fa fa-angle-left"></i></div>
-                <div class="btnRight sliderBtn"><i class="fa fa-angle-right"></i></div>
-            </div>
-        </div>
-
-
-
-
-        <div class="blackthemeMiddle blackthemeCont">
-            <div class="blackthemeMiddleSection home">
-                <BlogLinksBlock>
-                    <div class="homeLinkBoxWrap">
-                        <div class="homeLinkBox">
-                            <a href="javascript:void(0);" class="linkBox userProfile">
-                                <div class="linkImg">
-                                    
-                                </div>
-                                <div class="linkText">{% information "name" %}</div>
-                            </a>
-                            {% for ob in obj %}
-                            
-                            {% if ob.hot == True %}
-                            
-                            <BlogLinks>
-                                <a href="{{ob.title}}" target="_blank" class="linkBox">
-                                    <div class="linkImg"></div>
-                                    <div class="linkText">{{ob.title}}</div>
-                                </a>
-                            </BlogLinks>
-                            {% endif %}
-                            {% endfor %}
-                        </div>
-                    </div>
-                </BlogLinksBlock>
-                {% for ob in obj %}
-                <BLOGFA>
-                    <div class="blackthemePostBox">
-                        <div class="blackthemeHeadPost blackthemeCont">
-                            <div class="imgPartHeadPost">
-                                <span>
-                                    {{ob.author}}
-                                </span>
-                            </div>
-                            <h2><a href="<-PostLink->">
-                                    {{ob.title}}
-                                </a></h2>
-                        </div>
-                        <div class="postReturnImage">
-                        </div>
-                        <div class="sharedContent blackthemeCont">
-                            <div class="postSharedInfo">
-                                
-                                <div class="sharedIconBox">
-                                    <i class="fa fa-clock-o"></i>
-                                    <span>
-                                        {{ob.published}}
-                                    </span>
-                                </div>
-                                <BlogComment>
-                                    <div dir="rtl" class="convertComment" comment-for="<-PostId->"></div>
-                                </BlogComment>
-                            </div>
-                        </div>
-                        <div class="mainContent blackthemeCont">
-                            {{ob.caption}}
-                                <BlogExtendedPost>
-                                    <div class="sharedTag">
-                                        <i class="fa fa-plus"></i><a href="<-PostLink->">ادامه نوشته</a>
-                                    </div>
-                                </BlogExtendedPost>
-                                <BlogPostTagsBlock>
-                                    {% for category in ob.Categories.all %}
-                                    <div class="sharedTag">
-                                        <i class="fa fa-thumb-tack"></i>
-                                        <BlogPostTags separator=", "><a href="/c/#{{category}}">
-                                            
-                                                #{{category}}
-                                            </a></BlogPostTags>
-                                        </div>
-                                        {% endfor %}
-                                </BlogPostTagsBlock>
-                        </div>
-                    </div>
-                </BLOGFA>
-                {% endfor %}
-                <BlogNextAndPreviousBlock>
-                    <div class="blackthemePagenation blackthemeCont">
-                        <BlogPreviousPageBlock>
-                            <a href="<-BlogPreviousPageLink->" class="previouslink">صفحه قبل</a>
-                        </BlogPreviousPageBlock>
-                        <BlogNextPageBlock>
-                            <a href="<-BlogNextPageLink->" class="nextlink">صفحه بعد</a>
-                        </BlogNextPageBlock>
-                        <div class="clear"></div>
-                    </div>
-                </BlogNextAndPreviousBlock>
-                <article>
-                    <div class="blackthemeCopyRight blackthemeCont">
-                        <h2><a class="copyRight" href="http://blacktheme.ir/" target="_blank"  rel="nofollow" ><p>قالب وبلاگ</p> بلک تم</a></h2>
-                    </div>
-                </article>
-
-            </div>
-            <div class="blackthemeMiddleSection direct">
-                <ul class="directBoxWrap">
-                    <!-- محل نوشتن پیام در دایرکت -->
-                    <!-- create <li></li> , then add HTML format -->
-                    <li>
-                        <p>سلام به وبلاگ من خوش آمدین</p>
-                    </li>
-                    <li>
-                        <p>این یک متن آزمایشی است و میتوانید در قسمت ویرایش قالب به راحتی آن را تغییر بدهید</p>
-                    </li>
-                    <li>
-                        <p><img src="http://s10.picofile.com/file/8394441718/matn_4_small.jpg" alt=""></p>
-                        <p>با فنجان چایی هم میتوان مست شد</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="blackthemeMiddleSection profile">
-                <div class="blackthemeProfileWrap blackthemeCont">
-
-                    <div class="blackthemeProfilePhoto">
-                        <BlogPhoto><img src="<-BlogPhotoLink->"></BlogPhoto>
-                    </div>
-
-                    <div class="blackthemeBlogText">
-                        <h1><a href="<-BlogUrl->">
-                                <-BlogTitle->
-                            </a></h1>
-                        <h2>
-                            <-BlogDescription->
-                        </h2>
-                        <div class="blackthemeBlogInfoFriendAndPost">
-                            <a href="javascript:void(0);"><b class="blackthemeLinkCount">0</b> نفر را دنبال میکند</a>
-                            <a href="javascript:void(0);" class="profilePostContBtn" id="home"><b
-                                    class="blackthemePostCount">0</b> پست</a>
-                        </div>
-                        <BlogProfile>
-                            <div class="blackThemeInfoText">
-                                <-BlogAbout->
-                            </div>
-                        </BlogProfile>
-
-                    </div>
-                </div>
-                <ul class="profileUi blackthemeCont">
-                    <li><a href="/">صفحه اصلی</a></li>
-                    <BlogProfileLinkBlock>
-                        <li><a href="<-BlogProfileLink->">پروفایل</a></li>
-                    </BlogProfileLinkBlock>
-                    <BlogEmailBlock>
-                        <li><a href="mailto:<-BlogEmail->">ایمیل</a></li>
-                    </BlogEmailBlock>
-                    <li class="hideForcer"><a href="<-BlogArchiveLink->">آرشیو</a></li>
-                    <li class="hideForcer"><a href="/posts/">عناوین</a></li>
-                    <li class="hideForcer"><a href="/rss/">نقشه‌ وب</a></li>
-                    <li class="hideForcer"><a href="http://blacktheme.ir/" title="طراحی سایت و قالب" target="_blank"
-                             rel="nofollow" >طراح قالب</a></li>
-                </ul>
-                <div class="blackthemeMakePostTitle">
-
-                </div>
-            </div>
-
-            <div class="blackthemeMiddleSection search">
-                <BlogTagsBlock>
-                    <ul class="searchUl blackthemeCont">
-                        <h6>برچسب ها</h6>
-                        <BlogTags>
-                        <li><a href="<-TagLink->">
-                                <-TagName-> <span>[<-TagCount->]</span>
-                            </a></li>
-                        </BlogTags>
-                    </ul>
-                </BlogTagsBlock>
-
-
-                <BlogCategoriesBlock>
-                    <ul class="searchUl blackthemeCont">
-                        <h6>آرشیو موضوعی</h6>
-                        <BlogCategories>
-                            <li><a href="<-CategoryLink->">
-                                    <-CategoryName->
-                                </a></li>
-                        </BlogCategories>
-                    </ul>
-                </BlogCategoriesBlock>
-
-                <BlogLinkDumpBlock>
-                    <ul class="searchUl blackthemeCont">
-                        <h6>پیوندهای روزانه</h6>
-                        <BlogLinkDump>
-                            <li><a href="<-LinkUrl->" target="_blank" title="<-LinkDescription->">
-                                    <-LinkTitle->
-                                </a></li>
-                        </BlogLinkDump>
-                        <li><a href="/links" onclick="return openlinks();">آرشیو پیوندهای روزانه</a></li>
-                    </ul>
-                </BlogLinkDumpBlock>
-
-
-                <BlogArchiveBlock>
-                    <ul class="searchUl blackthemeCont">
-                        <h6>نوشته‌های پیشین</h6>
-                        <BlogArchive>
-                            <li><a href="<-ArchiveLink->">
-                                    <-ArchiveTitle->
-                                </a></li>
-                        </BlogArchive>
-                    </ul>
-                </BlogArchiveBlock>
-
-
-                <BlogAuthorsBlock>
-                    <ul class="searchUl blackthemeCont">
-                        <h6>نویسندگان</h6>
-                        <BlogAuthors>
-                            <li><a href="<-AuthorLink->">
-                                    <-AuthorName->
-                                </a></li>
-                        </BlogAuthors>
-                    </ul>
-                </BlogAuthorsBlock>
-
-                <div class="searchCode blackthemeCont">
-                    <h6>کد اضافه</h6>
-                    <-BlogCustomHtml->
-                </div>
-
-
-            </div>
-
-            <div class="blackthemeMiddleSection activity">
-                <BlogPreviousItemsBlock>
-                    <ul class="activityUl">
-                        <BlogPreviousItems items="30">
-                            <li>
-                                <a href="<-PostLink->">
-                                    <-PostTitle->
-                                </a>
-                                <span>را در تاریخ<i>
-                                        <-PostDate->
-                                    </i>ارسال کرد</span>
-                            </li>
-                        </BlogPreviousItems>
-
-                    </ul>
-                </BlogPreviousItemsBlock>
-            </div>
-
-        </div>
-
-        <div class="blackthemeBottom">
-            <div class="blackthemeBottomIcon bottomButtonSet" id="home">
-                <svg fill="#262626" height="24" viewBox="0 0 48 48" width="24">
-                    <path
-                        d="M45.3 48H30c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2-4.6-4.6-4.6s-4.6 2-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.5-.6 2.1 0l21.5 21.5c.4.4.6 1.1.3 1.6 0 .1-.1.1-.1.2v22.8c.1.8-.6 1.5-1.4 1.5zm-13.8-3h12.3V23.4L24 3.6l-20 20V45h12.3V34.2c0-4.3 3.3-7.6 7.6-7.6s7.6 3.3 7.6 7.6V45z">
-                    </path>
-                </svg>
-            </div>
-            <div class="blackthemeBottomIcon" id="search">
-                <svg fill="#262626" height="24" viewBox="0 0 48 48" width="24">
-                    <path
-                        d="M20 40C9 40 0 31 0 20S9 0 20 0s20 9 20 20-9 20-20 20zm0-37C10.6 3 3 10.6 3 20s7.6 17 17 17 17-7.6 17-17S29.4 3 20 3z">
-                    </path>
-                    <path
-                        d="M46.6 48.1c-.4 0-.8-.1-1.1-.4L32 34.2c-.6-.6-.6-1.5 0-2.1s1.5-.6 2.1 0l13.5 13.5c.6.6.6 1.5 0 2.1-.2.3-.6.4-1 .4z">
-                    </path>
-                </svg>
-            </div>
-            <div class="blackthemeBottomIcon" id="activity">
-                <svg fill="#262626" height="24" viewBox="0 0 48 48" width="24">
-                    <path clip-rule="evenodd"
-                        d="M34.3 3.5C27.2 3.5 24 8.8 24 8.8s-3.2-5.3-10.3-5.3C6.4 3.5.5 9.9.5 17.8s6.1 12.4 12.2 17.8c9.2 8.2 9.8 8.9 11.3 8.9s2.1-.7 11.3-8.9c6.2-5.5 12.2-10 12.2-17.8 0-7.9-5.9-14.3-13.2-14.3zm-1 29.8c-5.4 4.8-8.3 7.5-9.3 8.1-1-.7-4.6-3.9-9.3-8.1-5.5-4.9-11.2-9-11.2-15.6 0-6.2 4.6-11.3 10.2-11.3 4.1 0 6.3 2 7.9 4.2 3.6 5.1 1.2 5.1 4.8 0 1.6-2.2 3.8-4.2 7.9-4.2 5.6 0 10.2 5.1 10.2 11.3 0 6.7-5.7 10.8-11.2 15.6z"
-                        fill-rule="evenodd"></path>
-                </svg>
-            </div>
-            <div class="blackthemeBottomIcon" id="profile">
-            </div>
-        </div>
-
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'home:homePage' %}">{% information "nameE" %}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home:homePage' %}">صفحه اصلی</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url "account:login" %}">خودتم پست بذار</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              هشتگ های ترند
+            </a>
+            <ul class="dropdown-menu">
+              {% for hashTags in trendhash %}
+                
+              <li><a class="dropdown-item"  href="/c/{{hashTags}}">#{{hashTags}}</a></li>
+              {% endfor %}
+              
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url "detail:all" %}">همه ی هشتگ ها</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">شما وارد نشدید</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-    <script src="http://theme.blogfa.com/public/theme.1.2.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        try {
-            cmt_caption[0] = "نظرات";
-            cmt_caption[1] = "نظر بدهيد";
-            cmt_caption[2] = "يک نظر";
-            cmt_caption[3] = "نظر";
-            cmt_blogid = "<-BlogId->";
-        }
-        catch (e) { }
-
-    </script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script>
-for($(".blackthemeBottomIcon").click((function(){getClassFromBottomLink=$(this).attr("id"),$(".blackthemeBottomIcon").removeClass("bottomButtonSet"),$(this).addClass("bottomButtonSet"),$(".blackthemeMiddle").children().hide(0),$(".blackthemeMiddle").find("."+getClassFromBottomLink).show(0),$(".blackthemeTop").children().hide(0),$(".blackthemeTop").find("."+getClassFromBottomLink).show(0)})),$(".profilePostContBtn").click((function(){getClassFromBottomLink=$(this).attr("id"),$(".blackthemeBottomIcon").removeClass("bottomButtonSet"),$(".blackthemeBottom #home").addClass("bottomButtonSet"),$(".blackthemeMiddle").children().hide(0),$(".blackthemeMiddle").find("."+getClassFromBottomLink).show(0),$(".blackthemeTop").children().hide(0),$(".blackthemeTop").find("."+getClassFromBottomLink).show(0)})),$(".openDirect").click((function(){getClassFromBottomLink=$(this).attr("id"),$(".blackthemeBottom").hide(0),$(".blackthemeMiddle").children().hide(0),$(".blackthemeMiddle").find("."+getClassFromBottomLink).show(0),$(".blackthemeTop").children().hide(0),$(".blackthemeTop").find("."+getClassFromBottomLink).show(0)})),$(".closeDirect").click((function(){$(".blackthemeWrap .direct").hide(0),$(".blackthemeMiddle .home").show(0),$(".blackthemeBottom").show(0),$(".blackthemeTop .home").show(0)})),$(".mainContent").each((function(){$(this).find("#select").appendTo($(this).prevAll(".postReturnImage"))})),getSrcFromBlogImg=$(".blackthemeProfilePhoto img").attr("src"),$(".userProfile .linkImg img").attr("src",getSrcFromBlogImg),$(".blackthemeProfilePhoto img").clone().prependTo(".userProfile .linkImg,.porfileUserStory,.imgPartHeadPost,.activityUl li,.blackthemeBottomIcon#profile"),$(".blackthemeProfilePhoto img").clone().prependTo($(".directLeftPart .getImage")),$(".linkBox").each((function(){var _0x20C4A=$(this).attr("href");if(_0x20C4A.indexOf("#")>1){var _0x20C97=_0x20C4A.substring(_0x20C4A.indexOf("#")+1);$(this).children(".linkImg").append('<img src="'+_0x20C97+'">');var _0x20D31=_0x20C4A.split("#")[0];$(this).attr("href",_0x20D31)}var _0x20CE4,_0x20BFD=$(this).children(".linkText").text().charAt(0);$(this).children(".linkImg").append("<span>"+_0x20BFD+"</span>")})),$(".linkBox .linkImg img").each((function(){$(this).nextAll("span").remove(),$(this).nextAll("img").remove()})),getFirstArrayCm=BlogComments[0],$(".blackthemePostCount").text(getFirstArrayCm),getBlogUrlForPost=$(".blackthemeTopIcon h1 a").attr("href"),getFriendLinkCounter=$(".homeLinkBox a").length-1,$(".blackthemeLinkCount").text(getFriendLinkCounter),i=getFirstArrayCm;i>0;i--)$(".blackthemeMakePostTitle").append('<div class="blackthemeMakePostTitleWrap"><a href="'+getBlogUrlForPost+"/post/"+i+'/" title="پست شماره '+i+'">'+i+"</a></div>");function slideAuto(){$(".content").each((function(){now=$(this).children(":visible"),first=$(this).children(":first"),next=now.next(),next=-1==next.index()?first:next,now.fadeOut(speed,(function(){next.fadeIn(speed)})),nowTimer=$(this).prevAll(".timer").children(".showTimer"),firstTimer=$(this).prevAll(".timer").children(":first"),nextTimer=nowTimer.next(),nextTimer=-1==nextTimer.index()?firstTimer:nextTimer,nowTimer.removeClass("showTimer"),nextTimer.addClass("showTimer")}))}$(".content img").each((function(){for(getLen=$(this).length,getSrc=$(this).attr("src"),i=1;i<=getLen;i++)$(".content").append('<div class="img" style="background-image:url('+getSrc+');"></div>');$(this).remove(),$(".content").find("img")&&($(".userProfile").addClass("storyHighlight openStory"),$(".openStoryCondition").addClass("openStory"))})),$(".content .img").each((function(){$(".storyBox .timer").append('<div class="time"></div>')})),$(".storyBox .timer .time").first().addClass("showTimer"),speed=0,$(".btnRight").click((function(){now=$(this).prevAll(".content").children(":visible"),first=$(this).prevAll(".content").children(":first"),next=now.next(),next=-1==next.index()?first:next,now.fadeOut(speed,(function(){next.fadeIn(speed)})),nowTimer=$(this).prevAll(".timer").children(".showTimer"),firstTimer=$(this).prevAll(".timer").children(":first"),nextTimer=nowTimer.next(),nextTimer=-1==nextTimer.index()?firstTimer:nextTimer,nowTimer.removeClass("showTimer timePause"),nextTimer.addClass("showTimer"),clearInterval(interval),timer()})),$(".btnLeft").click((function(){now=$(this).prevAll(".content").children(":visible"),last=$(this).prevAll(".content").children(":last"),prev=now.prev(),prev=-1==prev.index()?last:prev,now.fadeOut(speed,(function(){prev.fadeIn(speed)})),nowTimer=$(this).prevAll(".timer").children(".showTimer"),lastTimer=$(this).prevAll(".timer").children(":last"),prevTimer=nowTimer.prev(),prevTimer=-1==prevTimer.index()?lastTimer:prevTimer,nowTimer.removeClass("showTimer timePause"),prevTimer.addClass("showTimer"),clearInterval(interval),timer()})),timer=function(){interval=setInterval((function(){slideAuto()}),5e3)},timer(),$(".content .img").click((function(){$(".timer .showTimer").hasClass("timePause")?(interval=setInterval((function(){slideAuto()}),5e3),$(".timer").find(".showTimer").removeClass("timePause")):(clearInterval(interval),$(".timer").find(".showTimer").addClass("timePause"))})),$(".openStory").click((function(){$(".storySection").show(0),clearInterval(interval),timer()})),$(".closeStory .closePartStory,.storyOverly").click((function(){$(".storySection").hide(0),clearInterval(interval),timer()})),$(window).on("load",(function(){$(".convertComment").each((function(){getTextComment=$(this).children("a").text(),$(this).children("a").addClass("sharedIconBox"),$(this).children("a").prepend('<i class="fa fa-heart"></i>')}))}));
-</script>
-
-
-
+  </nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>  
 </body>
 </html>

@@ -10,4 +10,11 @@ def information(inp):
     if inp == "nameE":
         return SiteInformation.objects.all()[0].siteNameEnglish
     if inp == "logo":
-        return SiteInformation.objects.all()[0].logo
+        a = str(SiteInformation.objects.all()[0].logo)
+        return "images/"+a
+    if inp == "telegram":
+        return SiteInformation.objects.all()[0].telegram
+    if inp == "phone":
+        return SiteInformation.objects.all()[0].phone
+    if inp == "email":
+        return SiteInformation.objects.all()[0].email

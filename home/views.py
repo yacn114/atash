@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from .models import Posts
+from .models import Posts,Categories
 # Create your views here.
 def homePage(request):
     obj = Posts.objects.filter(status=True)
-    return render(request, 'home.html',{"obj":obj})
+    cattrend = Categories.objects.all()
+    return render(request, 'home.html',{"obj":obj,"trendhash":cattrend})
