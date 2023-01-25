@@ -3,12 +3,12 @@ from django.contrib.auth.models import User
 from django.utils import timezone
 # Create your models here.
 class SiteInformation(models.Model):
-    siteNamePersian = models.CharField("person's first name",max_length=20)
-    logo = models.ImageField(upload_to='images/logo',verbose_name="لوگو سایت")
-    siteNameEnglish = models.CharField(max_length=20,verbose_name="اسم سایت انگلیسی")
-    telegram = models.CharField(max_length=15,verbose_name="تلگرام")
-    phone = models.CharField(max_length=11,verbose_name="شماره")
-    email = models.CharField(max_length=20,verbose_name="ایمیل")
+    siteNamePersian = models.CharField("اسم سایت به فارسی",max_length=20)
+    logo = models.ImageField("لوگو سایت",upload_to='images/logo')
+    siteNameEnglish = models.CharField("اسم سایت انگلیسی",max_length=20)
+    telegram = models.CharField("تلگرام",max_length=15)
+    phone = models.CharField("شماره",max_length=11)
+    email = models.CharField("ایمیل",max_length=20)
     class Meta:
         verbose_name = 'اطلاعات سایت'
         verbose_name_plural = 'اطلاعات سایت'
