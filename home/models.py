@@ -37,3 +37,6 @@ class Posts(models.Model):
         verbose_name_plural = "پست ها"
     def __str__(self):
         return self.title
+    @property
+    def tpublished(self):
+        return self.published
