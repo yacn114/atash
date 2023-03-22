@@ -7,7 +7,7 @@ class Posts(models.Model):
     caption = models.TextField()
     image = models.ImageField(upload_to="post/")
     updated = models.DateTimeField(auto_now=True)
-    published = models.DateTimeField(default=timezone.now)
+    published = models.DateField(default=timezone.now)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     Categories = models.ManyToManyField(Categories)
     status = models.BooleanField(default=False)

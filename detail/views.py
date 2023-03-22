@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from home.models import Categories,Posts
+from home.models import SiteInformation
 from django.utils import timezone
 # Create your views here.
 
@@ -13,5 +14,5 @@ def allHashTags(request):
 def detailPage(request,title):
 
    obj = Posts.objects.get(title=title)
-
-   return render(request,"detailTemplates.html",{"obj":obj})
+   siteData = SiteInformation.objects.first()
+   return render(request,"detailTemplates.html",{"obj":obj,"siteData":siteData})

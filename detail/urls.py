@@ -4,5 +4,5 @@ app_name = "detail"
 urlpatterns = [
     path("c/<str:tag>",hashtag),
     path("c/all",allHashTags,name="all"),
-    path('<str:title>',detailPage)
+    path('<str:title>',detailPage,name='detail')
 ]
